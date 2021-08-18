@@ -1,0 +1,67 @@
+
+
+  .dot:hover {
+    fill: lightslategray;
+  }
+  .dot{box-shadow: 1px 2px 1px 10px black;}
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 200px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: rgb(143, 143, 143);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;	
+    line-height: 150%	;
+    color: black;
+    box-shadow: 0px 0px 25px 5px rgba(241, 239, 239, 0.75);
+  
+}
+#title,
+#leftlegend,
+#description{
+  text-shadow: 1px 2px 3px black;
+}
+#leftlegend {color: midnightblue ;font-size: 22px;text-anchor:'middle';
+}
+.legend{font-size: 15px;
+
+}
+#title{
+  text-anchor: middle;
+  font-size: 25px;
+}
+#description{
+  text-anchor: middle;
+  font-size: 15px;
+}
+
+#y-axis> g.tick> text:nth-child(1){
+opacity:0;
+}
+
+
+
+.line {
+  fill: none;
+  stroke: rgb(36, 4, 63);
+  shape-rendering: crispEdges;
+   stroke-width: 2px;
+}
+
+.dot:hover {
+  opacity:1;
+}
+
+.dot {
+
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
