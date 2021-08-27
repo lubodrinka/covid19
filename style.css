@@ -4,11 +4,11 @@
     fill: lightslategray;
   }
   .dot{box-shadow: 1px 2px 1px 10px black;}
-  div.tooltip {	
+  .tooltip {	
     position: absolute;			
     text-align: center;			
-    width: 200px;					
-    height: 50px;					
+    width: 100px;					
+    height: 66px;					
     padding: 2px;				
     font: 12px sans-serif;		
     background: rgb(143, 143, 143);	
@@ -16,7 +16,7 @@
     border-radius: 8px;			
     pointer-events: none;	
     line-height: 150%	;
-    color: black;
+    color: ghostwhite;
     box-shadow: 0px 0px 25px 5px rgba(241, 239, 239, 0.75);
   
 }
